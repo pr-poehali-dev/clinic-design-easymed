@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Icon from "@/components/ui/icon";
+import { Link } from "react-router-dom";
 
 const medicalCertificates = [
   {
@@ -174,9 +175,17 @@ const Index = () => {
                     </div>
                     <span className="text-lg font-semibold text-primary">{cert.price}</span>
                   </div>
-                  <Button className="w-full">
-                    Заказать справку
-                  </Button>
+                  {cert.id === 1 ? (
+                    <Link to="/certificate-086">
+                      <Button className="w-full">
+                        Заказать справку
+                      </Button>
+                    </Link>
+                  ) : (
+                    <Button className="w-full">
+                      Заказать справку
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             ))}

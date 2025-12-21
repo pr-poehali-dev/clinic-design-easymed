@@ -1,0 +1,205 @@
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import Icon from "@/components/ui/icon";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+
+const Certificate086 = () => {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    birthDate: "",
+    phone: "",
+    comment: ""
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("Форма отправлена:", formData);
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  return (
+    <div className="min-h-screen bg-background">
+      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container flex h-16 items-center justify-between">
+          <Link to="/" className="flex items-center gap-2">
+            <div className="relative">
+              <Icon name="Heart" className="text-primary" size={32} />
+              <Icon name="Sparkles" className="text-primary absolute -top-1 -right-1" size={14} />
+            </div>
+            <span className="logo-text text-2xl text-primary">ИзиМед</span>
+          </Link>
+          <Link to="/">
+            <Button variant="ghost" size="sm">
+              <Icon name="ArrowLeft" size={16} className="mr-2" />
+              Назад
+            </Button>
+          </Link>
+        </div>
+      </header>
+
+      <main className="container py-12">
+        <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+          <div>
+            <div className="mb-6">
+              <Link to="/" className="text-sm text-muted-foreground hover:text-primary inline-flex items-center gap-1 mb-4">
+                <Icon name="ChevronLeft" size={16} />
+                Все услуги
+              </Link>
+              <h1 className="text-4xl font-bold mb-4">Справка 086/у</h1>
+              <p className="text-lg text-muted-foreground mb-6">
+                Для поступления в ВУЗ, колледж, техникум
+              </p>
+            </div>
+
+            <Card className="mb-6">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Icon name="Info" className="text-primary" size={24} />
+                  Информация о справке
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <Icon name="Wallet" className="text-primary mt-1" size={20} />
+                  <div>
+                    <p className="font-semibold">Стоимость</p>
+                    <p className="text-muted-foreground">от 1500 ₽</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Clock" className="text-primary mt-1" size={20} />
+                  <div>
+                    <p className="font-semibold">Срок оформления</p>
+                    <p className="text-muted-foreground">1 день</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="FileCheck" className="text-primary mt-1" size={20} />
+                  <div>
+                    <p className="font-semibold">Действительность</p>
+                    <p className="text-muted-foreground">6 месяцев с даты выдачи</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Образец справки 086/у</CardTitle>
+                <CardDescription>Официальный бланк медицинской справки</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <img 
+                  src="https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/1be29c7c-404a-448d-b24c-368231e1edac.jpg" 
+                  alt="Образец справки 086/у" 
+                  className="w-full rounded-lg border shadow-sm"
+                />
+              </CardContent>
+            </Card>
+          </div>
+
+          <div>
+            <Card className="sticky top-24">
+              <CardHeader>
+                <CardTitle className="text-2xl">Оформить заказ</CardTitle>
+                <CardDescription>Заполните форму, и мы свяжемся с вами в ближайшее время</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="space-y-2">
+                    <Label htmlFor="fullName">ФИО *</Label>
+                    <Input
+                      id="fullName"
+                      name="fullName"
+                      placeholder="Иванов Иван Иванович"
+                      value={formData.fullName}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="birthDate">Дата рождения *</Label>
+                    <Input
+                      id="birthDate"
+                      name="birthDate"
+                      type="date"
+                      value={formData.birthDate}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="phone">Номер телефона *</Label>
+                    <Input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      placeholder="+7 (999) 123-45-67"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      required
+                    />
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="comment">Комментарий к заказу</Label>
+                    <Textarea
+                      id="comment"
+                      name="comment"
+                      placeholder="Укажите дополнительные пожелания или вопросы"
+                      value={formData.comment}
+                      onChange={handleChange}
+                      rows={4}
+                    />
+                  </div>
+
+                  <Button 
+                    type="submit" 
+                    className="w-full bg-destructive hover:bg-destructive/90 text-destructive-foreground"
+                    size="lg"
+                  >
+                    <Icon name="ShoppingCart" size={20} className="mr-2" />
+                    Оформить заказ
+                  </Button>
+
+                  <p className="text-xs text-muted-foreground text-center">
+                    Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
+                  </p>
+                </form>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </main>
+
+      <footer className="border-t py-8 bg-muted/30 mt-12">
+        <div className="container">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-2">
+              <div className="relative">
+                <Icon name="Heart" className="text-primary" size={24} />
+                <Icon name="Sparkles" className="text-primary absolute -top-0.5 -right-0.5" size={10} />
+              </div>
+              <span className="logo-text font-semibold">ИзиМед</span>
+            </div>
+            <p className="text-sm text-muted-foreground">© 2024 ИзиМед. Все права защищены.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default Certificate086;
