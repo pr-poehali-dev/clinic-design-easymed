@@ -241,6 +241,28 @@ const Certificate086 = () => {
           </Card>
         </section>
 
+        <section className="mt-16">
+          <Card>
+            <CardContent className="pt-6">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h2 className="text-2xl font-bold mb-4">Справка 086/у в Москве — быстро и официально</h2>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Медицинская справка формы 086/у является обязательным документом для всех абитуриентов при поступлении в высшие и средние специальные учебные заведения. Документ подтверждает отсутствие противопоказаний к обучению и содержит результаты осмотров специалистов. В нашей клинике вы можете оформить справку за один день с официальными печатями и подписями врачей.
+                  </p>
+                </div>
+                <div>
+                  <img 
+                    src="https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/0031088e-05eb-4645-90a3-44df5591088b.jpg"
+                    alt="Оформление справки 086/у в медицинском центре"
+                    className="w-full rounded-lg shadow-md"
+                  />
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
         </div>
       </main>
 
