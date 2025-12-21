@@ -85,7 +85,10 @@ const Index = () => {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Icon name="Heart" className="text-primary" size={32} />
+            <div className="relative">
+              <Icon name="Heart" className="text-primary" size={32} />
+              <Icon name="Sparkles" className="text-primary absolute -top-1 -right-1" size={14} />
+            </div>
             <span className="logo-text text-2xl text-primary">ИзиМед</span>
           </div>
           <nav className="hidden md:flex gap-6">
@@ -302,7 +305,10 @@ const Index = () => {
         <div className="container">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
-              <Icon name="Heart" className="text-primary" size={24} />
+              <div className="relative">
+                <Icon name="Heart" className="text-primary" size={24} />
+                <Icon name="Sparkles" className="text-primary absolute -top-0.5 -right-0.5" size={10} />
+              </div>
               <span className="logo-text font-semibold">ИзиМед</span>
             </div>
             <p className="text-sm text-muted-foreground text-center">
