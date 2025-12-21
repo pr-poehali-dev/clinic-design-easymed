@@ -48,27 +48,26 @@ const Certificate086 = () => {
       </header>
 
       <main className="container py-12">
-        <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
-          <div>
-            <div className="mb-6">
-              <Link to="/" className="text-sm text-muted-foreground hover:text-primary inline-flex items-center gap-1 mb-4">
-                <Icon name="ChevronLeft" size={16} />
-                Все услуги
-              </Link>
-              <h1 className="text-4xl font-bold mb-4">Справка 086/у</h1>
-              <p className="text-lg text-muted-foreground mb-6">
-                Для поступления в ВУЗ, колледж, техникум
-              </p>
-            </div>
+        <div className="max-w-7xl mx-auto">
+          <Link to="/" className="text-sm text-muted-foreground hover:text-primary inline-flex items-center gap-1 mb-6">
+            <Icon name="ChevronLeft" size={16} />
+            Все услуги
+          </Link>
+          
+          <h1 className="text-4xl font-bold mb-2">Справка 086/у</h1>
+          <p className="text-lg text-muted-foreground mb-8">
+            Для поступления в ВУЗ, колледж, техникум
+          </p>
 
-            <Card className="mb-6">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Icon name="Info" className="text-primary" size={24} />
-                  Информация о справке
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
+          <Card className="mb-8">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Icon name="Info" className="text-primary" size={24} />
+                Информация о справке
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="flex items-start gap-3">
                   <Icon name="Wallet" className="text-primary mt-1" size={20} />
                   <div>
@@ -90,8 +89,12 @@ const Certificate086 = () => {
                     <p className="text-muted-foreground">6 месяцев с даты выдачи</p>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </CardContent>
+          </Card>
+
+        <div className="grid lg:grid-cols-2 gap-8">
+          <div>
 
             <Card>
               <CardHeader>
@@ -181,6 +184,7 @@ const Certificate086 = () => {
               </CardContent>
             </Card>
           </div>
+        </div>
         </div>
       </main>
 
