@@ -6,6 +6,12 @@ import { Label } from "@/components/ui/label";
 import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const Certificate086 = () => {
   const [formData, setFormData] = useState({
@@ -184,6 +190,57 @@ const Certificate086 = () => {
             </Card>
           </div>
         </div>
+
+        <section className="mt-16">
+          <Card className="bg-muted/50">
+            <CardHeader>
+              <CardTitle className="text-2xl flex items-center gap-2">
+                <Icon name="HelpCircle" className="text-primary" size={28} />
+                Часто задаваемые вопросы
+              </CardTitle>
+              <CardDescription>Ответы на популярные вопросы о справке 086/у</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Accordion type="multiple" defaultValue={["item-1", "item-2", "item-3", "item-4", "item-5"]} className="w-full">
+                <AccordionItem value="item-1">
+                  <AccordionTrigger className="text-left">Для чего нужна справка 086/у?</AccordionTrigger>
+                  <AccordionContent>
+                    Справка 086/у требуется при поступлении в учебные заведения (ВУЗы, колледжи, техникумы) и подтверждает отсутствие медицинских противопоказаний к обучению.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-2">
+                  <AccordionTrigger className="text-left">Какие документы нужны для оформления?</AccordionTrigger>
+                  <AccordionContent>
+                    Для оформления справки понадобится паспорт и прививочный сертификат (если есть). В некоторых случаях может потребоваться фото 3x4.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-3">
+                  <AccordionTrigger className="text-left">Сколько действует справка 086/у?</AccordionTrigger>
+                  <AccordionContent>
+                    Справка действительна в течение 6 месяцев с даты выдачи. После истечения срока потребуется оформление новой справки.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-4">
+                  <AccordionTrigger className="text-left">Можно ли оформить справку за один день?</AccordionTrigger>
+                  <AccordionContent>
+                    Да, в нашей клинике справка 086/у оформляется за 1 рабочий день. Вы можете оставить заявку онлайн и забрать готовый документ на следующий день.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-5">
+                  <AccordionTrigger className="text-left">Будет ли справка официальной?</AccordionTrigger>
+                  <AccordionContent>
+                    Да, справка полностью официальная, заверяется печатями и подписями лицензированных врачей. Принимается всеми учебными заведениями РФ.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </CardContent>
+          </Card>
+        </section>
+
         </div>
       </main>
 
