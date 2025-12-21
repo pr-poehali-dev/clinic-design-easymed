@@ -48,7 +48,7 @@ const Certificate086 = () => {
       </header>
 
       <main className="container py-12">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <Link to="/" className="text-sm text-muted-foreground hover:text-primary inline-flex items-center gap-1 mb-6">
             <Icon name="ChevronLeft" size={16} />
             Все услуги
@@ -178,7 +178,7 @@ const Certificate086 = () => {
                 <img 
                   src="https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/1be29c7c-404a-448d-b24c-368231e1edac.jpg" 
                   alt="Образец справки 086/у" 
-                  className="w-full rounded-lg border shadow-sm"
+                  className="w-full max-w-md mx-auto rounded-lg border shadow-sm"
                 />
               </CardContent>
             </Card>
