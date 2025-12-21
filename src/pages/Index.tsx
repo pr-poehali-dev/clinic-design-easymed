@@ -5,6 +5,12 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const medicalCertificates = [
   {
@@ -92,7 +98,20 @@ const Index = () => {
             </div>
             <span className="logo-text text-2xl text-primary">ИзиМед</span>
           </div>
-          <nav className="hidden md:flex gap-6">
+          <nav className="hidden md:flex gap-6 items-center">
+            <DropdownMenu>
+              <DropdownMenuTrigger className="text-foreground/80 hover:text-primary transition-colors flex items-center gap-1">
+                Справки
+                <Icon name="ChevronDown" size={16} />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem asChild>
+                  <Link to="/certificate-086" className="cursor-pointer">
+                    086/у
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             <a href="#services" className="text-foreground/80 hover:text-primary transition-colors">Услуги</a>
             <a href="#about" className="text-foreground/80 hover:text-primary transition-colors">О клинике</a>
             <a href="#contacts" className="text-foreground/80 hover:text-primary transition-colors">Контакты</a>
