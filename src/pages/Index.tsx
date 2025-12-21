@@ -86,7 +86,7 @@ const Index = () => {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <Icon name="Heart" className="text-primary" size={32} />
-            <span className="text-2xl font-bold text-primary">ИзиМед</span>
+            <span className="logo-text text-2xl text-primary">ИзиМед</span>
           </div>
           <nav className="hidden md:flex gap-6">
             <a href="#services" className="text-foreground/80 hover:text-primary transition-colors">Услуги</a>
@@ -303,7 +303,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <Icon name="Heart" className="text-primary" size={24} />
-              <span className="font-semibold">ИзиМед</span>
+              <span className="logo-text font-semibold">ИзиМед</span>
             </div>
             <p className="text-sm text-muted-foreground text-center">
               © 2024 ИзиМед. Все права защищены. Медицинские услуги в Москве

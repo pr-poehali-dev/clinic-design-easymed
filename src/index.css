@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -109,5 +109,11 @@
   h5,
   h6 {
     font-family: "Montserrat", sans-serif;
+  }
+
+  .logo-text {
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    letter-spacing: 0.02em;
   }
 }
