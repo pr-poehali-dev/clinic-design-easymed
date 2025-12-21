@@ -203,36 +203,36 @@ const Certificate086 = () => {
             <CardContent>
               <Accordion type="multiple" defaultValue={["item-1", "item-2", "item-3", "item-4", "item-5"]} className="w-full">
                 <AccordionItem value="item-1">
-                  <AccordionTrigger className="text-left">Для чего нужна справка 086/у?</AccordionTrigger>
-                  <AccordionContent>
+                  <AccordionTrigger className="text-left text-cyan-400">Для чего нужна справка 086/у?</AccordionTrigger>
+                  <AccordionContent className="text-white">
                     Справка 086/у требуется при поступлении в учебные заведения (ВУЗы, колледжи, техникумы) и подтверждает отсутствие медицинских противопоказаний к обучению.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-2">
-                  <AccordionTrigger className="text-left">Какие документы нужны для оформления?</AccordionTrigger>
-                  <AccordionContent>
+                  <AccordionTrigger className="text-left text-cyan-400">Какие документы нужны для оформления?</AccordionTrigger>
+                  <AccordionContent className="text-white">
                     Для оформления справки понадобится паспорт и прививочный сертификат (если есть). В некоторых случаях может потребоваться фото 3x4.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-3">
-                  <AccordionTrigger className="text-left">Сколько действует справка 086/у?</AccordionTrigger>
-                  <AccordionContent>
+                  <AccordionTrigger className="text-left text-cyan-400">Сколько действует справка 086/у?</AccordionTrigger>
+                  <AccordionContent className="text-white">
                     Справка действительна в течение 6 месяцев с даты выдачи. После истечения срока потребуется оформление новой справки.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-4">
-                  <AccordionTrigger className="text-left">Можно ли оформить справку за один день?</AccordionTrigger>
-                  <AccordionContent>
+                  <AccordionTrigger className="text-left text-cyan-400">Можно ли оформить справку за один день?</AccordionTrigger>
+                  <AccordionContent className="text-white">
                     Да, в нашей клинике справка 086/у оформляется за 1 рабочий день. Вы можете оставить заявку онлайн и забрать готовый документ на следующий день.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-5">
-                  <AccordionTrigger className="text-left">Будет ли справка официальной?</AccordionTrigger>
-                  <AccordionContent>
+                  <AccordionTrigger className="text-left text-cyan-400">Будет ли справка официальной?</AccordionTrigger>
+                  <AccordionContent className="text-white">
                     Да, справка полностью официальная, заверяется печатями и подписями лицензированных врачей. Принимается всеми учебными заведениями РФ.
                   </AccordionContent>
                 </AccordionItem>
