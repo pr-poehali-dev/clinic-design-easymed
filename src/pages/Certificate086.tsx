@@ -71,8 +71,8 @@ const Certificate086 = () => {
                 <div className="flex items-start gap-3">
                   <Icon name="Wallet" className="text-primary mt-1" size={20} />
                   <div>
-                    <p className="font-semibold">Стоимость</p>
-                    <p className="text-muted-foreground">от 1500 ₽</p>
+                    <p className="font-semibold">Цена</p>
+                    <p className="text-muted-foreground">1750 ₽</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
