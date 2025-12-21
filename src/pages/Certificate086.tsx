@@ -99,9 +99,9 @@ const Certificate086 = () => {
             </CardContent>
           </Card>
 
-        <div className="grid lg:grid-cols-2 gap-8">
-          <div>
-            <Card className="sticky top-24">
+        <div className="flex flex-col lg:flex-row gap-8">
+          <div className="lg:w-[60%]">
+            <Card>
               <CardHeader>
                 <CardTitle className="text-2xl">Оформить заказ</CardTitle>
                 <CardDescription>Заполните форму, и мы свяжемся с вами в ближайшее время</CardDescription>
@@ -174,7 +174,7 @@ const Certificate086 = () => {
             </Card>
           </div>
 
-          <div>
+          <div className="lg:w-[40%]">
             <Card>
               <CardHeader>
                 <CardTitle>Образец справки 086/у</CardTitle>
@@ -184,7 +184,7 @@ const Certificate086 = () => {
                 <img 
                   src="https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/1be29c7c-404a-448d-b24c-368231e1edac.jpg" 
                   alt="Образец справки 086/у" 
-                  className="w-full max-w-md mx-auto rounded-lg border shadow-sm"
+                  className="w-full rounded-lg border shadow-sm"
                 />
               </CardContent>
             </Card>
