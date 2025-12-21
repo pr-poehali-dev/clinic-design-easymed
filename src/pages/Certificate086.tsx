@@ -95,23 +95,6 @@ const Certificate086 = () => {
 
         <div className="grid lg:grid-cols-2 gap-8">
           <div>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Образец справки 086/у</CardTitle>
-                <CardDescription>Официальный бланк медицинской справки</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <img 
-                  src="https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/1be29c7c-404a-448d-b24c-368231e1edac.jpg" 
-                  alt="Образец справки 086/у" 
-                  className="w-full rounded-lg border shadow-sm"
-                />
-              </CardContent>
-            </Card>
-          </div>
-
-          <div>
             <Card className="sticky top-24">
               <CardHeader>
                 <CardTitle className="text-2xl">Оформить заказ</CardTitle>
@@ -181,6 +164,22 @@ const Certificate086 = () => {
                     Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
                   </p>
                 </form>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div>
+            <Card>
+              <CardHeader>
+                <CardTitle>Образец справки 086/у</CardTitle>
+                <CardDescription>Официальный бланк медицинской справки</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <img 
+                  src="https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/1be29c7c-404a-448d-b24c-368231e1edac.jpg" 
+                  alt="Образец справки 086/у" 
+                  className="w-full rounded-lg border shadow-sm"
+                />
               </CardContent>
             </Card>
           </div>
