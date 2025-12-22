@@ -72,7 +72,7 @@ const Certificate086 = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Icon name="Info" className="text-primary" size={24} />
-                Информация о справке
+                Информация о справке 086/у
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -94,7 +94,7 @@ const Certificate086 = () => {
                 <div className="flex items-start gap-3">
                   <Icon name="FileCheck" className="text-primary mt-1" size={40} />
                   <div>
-                    <p className="font-semibold">Действительность</p>
+                    <p className="font-semibold">Срок действия</p>
                     <p className="text-muted-foreground">6 месяцев с даты выдачи</p>
                   </div>
                 </div>
