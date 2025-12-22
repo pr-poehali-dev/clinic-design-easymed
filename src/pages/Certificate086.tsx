@@ -55,10 +55,13 @@ const Certificate086 = () => {
 
       <main className="container py-12">
         <div className="max-w-6xl mx-auto">
-          <Link to="/" className="text-sm text-muted-foreground hover:text-primary inline-flex items-center gap-1 mb-6">
-            <Icon name="ChevronLeft" size={16} />
-            Все услуги
-          </Link>
+          <nav className="flex items-center gap-2 text-sm mb-6">
+            <Link to="/" className="text-primary hover:underline">
+              ИзиМед
+            </Link>
+            <Icon name="ChevronRight" size={16} className="text-muted-foreground" />
+            <span className="text-muted-foreground">Справка 086/у</span>
+          </nav>
           
           <h1 className="text-4xl font-bold mb-2">Справка 086/у</h1>
           <p className="text-lg text-muted-foreground mb-8">
