@@ -234,6 +234,72 @@ const Certificate086 = () => {
         </section>
 
         <section className="mt-16">
+          <Card className="bg-gradient-to-br from-primary/5 to-primary/10">
+            <CardHeader>
+              <CardTitle className="text-2xl flex items-center gap-2">
+                <Icon name="ListChecks" className="text-primary" size={28} />
+                Как оформить справку 086/у
+              </CardTitle>
+              <CardDescription>Простой процесс получения справки за 3 шага</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="flex gap-4 p-4 rounded-lg bg-white shadow-sm">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl">
+                      1
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2 flex items-center gap-2">
+                      <Icon name="FileEdit" size={20} className="text-primary" />
+                      Оставляете заявку
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      Заполняете форму на сайте с вашими данными и контактной информацией
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4 p-4 rounded-lg bg-white shadow-sm">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl">
+                      2
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2 flex items-center gap-2">
+                      <Icon name="Phone" size={20} className="text-primary" />
+                      Согласуете время и место
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      Наши менеджеры связываются с вами и договариваются о доставке справки
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4 p-4 rounded-lg bg-white shadow-sm">
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl">
+                      3
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2 flex items-center gap-2">
+                      <Icon name="Package" size={20} className="text-primary" />
+                      Получаете справку
+                    </h3>
+                    <p className="text-sm text-muted-foreground">
+                      Курьер доставляет готовую официальную справку в удобное для вас место
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        <section className="mt-16">
           <Card>
             <CardHeader>
               <CardTitle className="text-2xl flex items-center gap-2">
