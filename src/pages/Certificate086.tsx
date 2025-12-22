@@ -243,55 +243,43 @@ const Certificate086 = () => {
               <CardDescription>Простой процесс получения справки за 3 шага</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="flex gap-4 p-4 rounded-lg bg-white shadow-sm">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl">
-                      1
-                    </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="flex flex-col items-center text-center p-6 rounded-lg bg-white shadow-sm">
+                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center mb-4">
+                    <span className="text-5xl">✍️</span>
                   </div>
-                  <div>
-                    <h3 className="font-semibold mb-2 flex items-center gap-2">
-                      <Icon name="FileEdit" size={20} className="text-primary" />
-                      Оставляете заявку
-                    </h3>
-                    <p className="text-sm text-muted-foreground">
-                      Заполняете форму на сайте с вашими данными и контактной информацией
-                    </p>
+                  <h3 className="font-semibold text-lg mb-2">Оставляете заявку</h3>
+                  <p className="text-sm text-muted-foreground mb-4 flex-grow">
+                    Заполняете форму на сайте с вашими данными и контактной информацией
+                  </p>
+                  <div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-lg">
+                    1
                   </div>
                 </div>
 
-                <div className="flex gap-4 p-4 rounded-lg bg-white shadow-sm">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl">
-                      2
-                    </div>
+                <div className="flex flex-col items-center text-center p-6 rounded-lg bg-white shadow-sm">
+                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center mb-4">
+                    <span className="text-5xl">📞</span>
                   </div>
-                  <div>
-                    <h3 className="font-semibold mb-2 flex items-center gap-2">
-                      <Icon name="Phone" size={20} className="text-primary" />
-                      Согласуете время и место
-                    </h3>
-                    <p className="text-sm text-muted-foreground">
-                      Наши менеджеры связываются с вами и договариваются о доставке справки
-                    </p>
+                  <h3 className="font-semibold text-lg mb-2">Согласуете время и место</h3>
+                  <p className="text-sm text-muted-foreground mb-4 flex-grow">
+                    Наши менеджеры связываются с вами и договариваются о доставке справки
+                  </p>
+                  <div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-lg">
+                    2
                   </div>
                 </div>
 
-                <div className="flex gap-4 p-4 rounded-lg bg-white shadow-sm">
-                  <div className="flex-shrink-0">
-                    <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl">
-                      3
-                    </div>
+                <div className="flex flex-col items-center text-center p-6 rounded-lg bg-white shadow-sm">
+                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center mb-4">
+                    <span className="text-5xl">🚚</span>
                   </div>
-                  <div>
-                    <h3 className="font-semibold mb-2 flex items-center gap-2">
-                      <Icon name="Package" size={20} className="text-primary" />
-                      Получаете справку
-                    </h3>
-                    <p className="text-sm text-muted-foreground">
-                      Курьер доставляет готовую официальную справку в удобное для вас место
-                    </p>
+                  <h3 className="font-semibold text-lg mb-2">Получаете справку</h3>
+                  <p className="text-sm text-muted-foreground mb-4 flex-grow">
+                    Курьер доставляет готовую официальную справку в удобное для вас место
+                  </p>
+                  <div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-lg">
+                    3
                   </div>
                 </div>
               </div>
