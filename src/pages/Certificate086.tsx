@@ -102,15 +102,15 @@ const Certificate086 = () => {
             </CardContent>
           </Card>
 
-        <div className="flex flex-col lg:flex-row gap-8">
-          <div className="lg:w-[50%]">
+        <div className="flex flex-col lg:flex-row gap-8 items-start">
+          <div className="w-full lg:w-1/2">
             <Card>
               <CardHeader>
                 <CardTitle className="text-2xl">Оформить заказ</CardTitle>
                 <CardDescription>Заполните форму, и мы свяжемся с вами в ближайшее время</CardDescription>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="space-y-2">
                     <Label htmlFor="fullName">ФИО *</Label>
                     <Input
@@ -156,7 +156,7 @@ const Certificate086 = () => {
                       placeholder="Укажите дополнительные пожелания или вопросы"
                       value={formData.comment}
                       onChange={handleChange}
-                      rows={4}
+                      rows={3}
                     />
                   </div>
 
@@ -177,17 +177,17 @@ const Certificate086 = () => {
             </Card>
           </div>
 
-          <div className="lg:w-[50%]">
-            <Card className="h-full">
+          <div className="w-full lg:w-1/2">
+            <Card>
               <CardHeader>
                 <CardTitle>Образец справки 086/у</CardTitle>
                 <CardDescription>Официальный бланк медицинской справки</CardDescription>
               </CardHeader>
-              <CardContent className="flex items-center justify-center">
+              <CardContent className="flex items-center justify-center p-4">
                 <img 
                   src="https://cdn.poehali.dev/files/spravka086u.jpg" 
                   alt="Образец справки 086/у" 
-                  className="max-w-full h-auto max-h-[600px] rounded-lg border shadow-sm object-contain"
+                  className="w-full h-auto rounded-lg border shadow-sm"
                 />
               </CardContent>
             </Card>
