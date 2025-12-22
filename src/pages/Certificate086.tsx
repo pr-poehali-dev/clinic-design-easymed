@@ -204,7 +204,7 @@ const Certificate086 = () => {
               </CardHeader>
               <CardContent className="flex items-center justify-center p-4">
                 <img 
-                  src="https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/b0a0b114-6f9a-4349-b9e8-139ff98fda91.jpg" 
+                  src="https://cdn.poehali.dev/files/spravka086u.jpg" 
                   alt="Образец справки 086/у" 
                   className="w-full h-auto rounded-lg border shadow-sm"
                 />
