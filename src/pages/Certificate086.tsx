@@ -297,8 +297,120 @@ const Certificate086 = () => {
             </CardContent>
           </Card>
         </section>
+
+        <section className="mt-16">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-2xl">Справка 086/у в Москве - быстро и надежно</CardTitle>
+            </CardHeader>
+            <CardContent className="prose prose-gray max-w-none">
+              <p className="text-muted-foreground mb-4">
+                Справка 086/у является обязательным медицинским документом для поступления в высшие и средние учебные заведения. 
+                Наша клиника ИзиМед предлагает услуги по оформлению справки 086/у в Москве с минимальными временными затратами.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                Мы понимаем, насколько важно получить справку быстро и качественно. Поэтому мы предлагаем упрощенную процедуру 
+                оформления без необходимости многократного посещения врачей и сдачи анализов. Все справки выдаются на официальных 
+                бланках с печатями и подписями врачей.
+              </p>
+              <h3 className="text-xl font-semibold mt-6 mb-3">Почему выбирают нас?</h3>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li>Быстрое оформление - от 1 дня</li>
+                <li>Официальные документы с печатями</li>
+                <li>Доставка по Москве</li>
+                <li>Доступные цены</li>
+                <li>Конфиденциальность</li>
+              </ul>
+              <p className="text-muted-foreground mt-4">
+                Справка 086/у содержит информацию о состоянии здоровья абитуриента, результаты медицинских осмотров и анализов. 
+                Документ необходим для подтверждения того, что студент может обучаться в выбранном учебном заведении без 
+                ограничений по состоянию здоровья.
+              </p>
+            </CardContent>
+          </Card>
+        </section>
         </div>
       </main>
+
+      <footer className="mt-20 border-t bg-muted/30">
+        <div className="container py-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <img 
+                  src="https://cdn.poehali.dev/files/Screenshot at Dec 22 23-50-53.png" 
+                  alt="ИзиМед - Справки и медкнижки" 
+                  className="h-12 w-auto"
+                />
+                <div className="flex flex-col gap-0.5">
+                  <div className="text-2xl font-serif font-bold leading-none">
+                    <span style={{ color: '#7CB5B1' }}>Изи</span>
+                    <span style={{ color: '#427D98' }}>Мед</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground">Справки и медкнижки</p>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground mb-4">
+                Медицинские справки и медкнижки быстро и надежно
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-4 flex items-center gap-2">
+                <Icon name="Phone" size={18} className="text-primary" />
+                Контакты
+              </h3>
+              <div className="space-y-3 text-sm">
+                <a href="tel:+74999999999" className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors">
+                  <Icon name="Phone" size={16} />
+                  +7 (499) 999-99-99
+                </a>
+                <div className="flex items-center gap-2 text-muted-foreground">
+                  <Icon name="MapPin" size={16} />
+                  Москва, Енисейская ул., 2
+                </div>
+                <div className="flex items-center gap-2 text-muted-foreground">
+                  <Icon name="Clock" size={16} />
+                  Пн-Пт: 9:00 - 20:00, Сб-Вс: 10:00 - 18:00
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-4 flex items-center gap-2">
+                <Icon name="FileText" size={18} className="text-primary" />
+                Услуги
+              </h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>
+                  <Link to="/certificate-086" className="hover:text-primary transition-colors">
+                    Справка 086/у
+                  </Link>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-primary transition-colors">
+                    Справка 003-В/у
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-primary transition-colors">
+                    Справка 095/у
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-primary transition-colors">
+                    Медицинская книжка
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
+            <p>&copy; 2024 ИзиМед. Все права защищены.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
