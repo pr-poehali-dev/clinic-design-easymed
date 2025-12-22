@@ -1,6 +1,11 @@
-import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export const CertificateHeader = () => {
   return (
@@ -20,23 +25,33 @@ export const CertificateHeader = () => {
             <p className="text-xs text-muted-foreground">Справки и медкнижки</p>
           </div>
         </Link>
-        <div className="flex items-center gap-6">
-          <div className="hidden md:flex flex-col items-end gap-1">
-            <a href="tel:+74999999999" className="text-lg font-semibold text-primary hover:text-primary/80 transition-colors flex items-center gap-2">
-              <Icon name="Phone" size={18} />
-              +7 (499) 999-99-99
-            </a>
-            <div className="text-xs text-muted-foreground flex items-center gap-1">
-              <Icon name="MapPin" size={14} />
-              Москва, Енисейская ул., 2
-            </div>
+        <nav className="hidden md:flex gap-6 items-center">
+          <DropdownMenu>
+            <DropdownMenuTrigger className="text-foreground/80 hover:text-primary transition-colors flex items-center gap-1">
+              Справки
+              <Icon name="ChevronDown" size={16} />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem asChild>
+                <Link to="/certificate-086" className="cursor-pointer">
+                  086/у
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+          <Link to="/#services" className="text-foreground/80 hover:text-primary transition-colors">Услуги</Link>
+          <Link to="/#about" className="text-foreground/80 hover:text-primary transition-colors">О клинике</Link>
+          <Link to="/#contacts" className="text-foreground/80 hover:text-primary transition-colors">Контакты</Link>
+        </nav>
+        <div className="hidden md:flex flex-col items-end gap-1">
+          <a href="tel:+74999999999" className="text-lg font-semibold text-primary hover:text-primary/80 transition-colors flex items-center gap-2">
+            <Icon name="Phone" size={18} />
+            +7 (499) 999-99-99
+          </a>
+          <div className="text-xs text-muted-foreground flex items-center gap-1">
+            <Icon name="MapPin" size={14} />
+            Москва, Енисейская ул., 2
           </div>
-          <Link to="/">
-            <Button variant="ghost" size="sm">
-              <Icon name="ArrowLeft" size={16} className="mr-2" />
-              Назад
-            </Button>
-          </Link>
         </div>
       </div>
     </header>
