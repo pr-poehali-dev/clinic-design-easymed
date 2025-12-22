@@ -37,12 +37,12 @@ const Certificate086 = () => {
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
-          <Link to="/" className="flex items-center gap-2">
-            <div className="relative">
-              <Icon name="Heart" className="text-primary" size={32} />
-              <Icon name="Sparkles" className="text-primary absolute -top-1 -right-1" size={14} />
-            </div>
-            <span className="logo-text text-2xl text-primary">ИзиМед</span>
+          <Link to="/" className="flex items-center gap-3">
+            <img 
+              src="https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/ca62bbd8-d26f-4ec7-b295-5739d1cc2e30.jpg" 
+              alt="ИзиМед - Справки и медкнижки" 
+              className="h-12 w-auto"
+            />
           </Link>
           <Link to="/">
             <Button variant="ghost" size="sm">
