@@ -78,21 +78,21 @@ const Certificate086 = () => {
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="flex items-start gap-3">
-                  <Icon name="Wallet" className="text-primary mt-1" size={20} />
+                  <Icon name="Wallet" className="text-primary mt-1" size={40} />
                   <div>
                     <p className="font-semibold">Цена</p>
                     <p className="text-muted-foreground">1750 ₽</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Icon name="Clock" className="text-primary mt-1" size={20} />
+                  <Icon name="Clock" className="text-primary mt-1" size={40} />
                   <div>
                     <p className="font-semibold">Срок оформления</p>
                     <p className="text-muted-foreground">1 день</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Icon name="FileCheck" className="text-primary mt-1" size={20} />
+                  <Icon name="FileCheck" className="text-primary mt-1" size={40} />
                   <div>
                     <p className="font-semibold">Действительность</p>
                     <p className="text-muted-foreground">6 месяцев с даты выдачи</p>
@@ -103,7 +103,7 @@ const Certificate086 = () => {
           </Card>
 
         <div className="flex flex-col lg:flex-row gap-8">
-          <div className="lg:w-[60%]">
+          <div className="lg:w-[50%]">
             <Card>
               <CardHeader>
                 <CardTitle className="text-2xl">Оформить заказ</CardTitle>
@@ -177,7 +177,7 @@ const Certificate086 = () => {
             </Card>
           </div>
 
-          <div className="lg:w-[40%]">
+          <div className="lg:w-[50%]">
             <Card>
               <CardHeader>
                 <CardTitle>Образец справки 086/у</CardTitle>
