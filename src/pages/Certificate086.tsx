@@ -5,7 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -20,6 +20,20 @@ const Certificate086 = () => {
     phone: "",
     comment: ""
   });
+
+  useEffect(() => {
+    document.title = "Купить справку 086/у в Москве недорого с доставкой в клинике ИзиМед";
+    
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Купить справку 086/у в Москве без прохождения врачей и сдачи анализов с доставкой на сайте клиники \"ИзиМед\".");
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = "description";
+      meta.content = "Купить справку 086/у в Москве без прохождения врачей и сдачи анализов с доставкой на сайте клиники \"ИзиМед\".";
+      document.head.appendChild(meta);
+    }
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
