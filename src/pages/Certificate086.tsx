@@ -178,16 +178,16 @@ const Certificate086 = () => {
           </div>
 
           <div className="lg:w-[50%]">
-            <Card>
+            <Card className="h-full">
               <CardHeader>
                 <CardTitle>Образец справки 086/у</CardTitle>
                 <CardDescription>Официальный бланк медицинской справки</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex items-center justify-center">
                 <img 
                   src="https://cdn.poehali.dev/files/spravka086u.jpg" 
                   alt="Образец справки 086/у" 
-                  className="w-full rounded-lg border shadow-sm"
+                  className="max-w-full h-auto max-h-[600px] rounded-lg border shadow-sm object-contain"
                 />
               </CardContent>
             </Card>
