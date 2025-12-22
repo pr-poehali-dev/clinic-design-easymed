@@ -253,42 +253,72 @@ const Certificate086 = () => {
             <CardContent>
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
-                  <AccordionTrigger>Что такое справка 086/у?</AccordionTrigger>
+                  <AccordionTrigger className="text-primary hover:text-primary/80">
+                    <span className="flex items-center gap-2">
+                      <Icon name="FileText" size={18} />
+                      Что такое справка 086/у?
+                    </span>
+                  </AccordionTrigger>
                   <AccordionContent>
                     Справка 086/у — это медицинская справка установленной формы, которая требуется при поступлении в высшие и средние специальные учебные заведения. Она подтверждает, что студент здоров и может обучаться в выбранном учебном заведении.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-2">
-                  <AccordionTrigger>Сколько действует справка 086/у?</AccordionTrigger>
+                  <AccordionTrigger className="text-primary hover:text-primary/80">
+                    <span className="flex items-center gap-2">
+                      <Icon name="Calendar" size={18} />
+                      Сколько действует справка 086/у?
+                    </span>
+                  </AccordionTrigger>
                   <AccordionContent>
                     Справка 086/у действует в течение 6 месяцев с момента выдачи. После истечения этого срока необходимо оформлять новую справку.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-3">
-                  <AccordionTrigger>Какие документы нужны для оформления справки 086/у?</AccordionTrigger>
+                  <AccordionTrigger className="text-primary hover:text-primary/80">
+                    <span className="flex items-center gap-2">
+                      <Icon name="FolderOpen" size={18} />
+                      Какие документы нужны для оформления справки 086/у?
+                    </span>
+                  </AccordionTrigger>
                   <AccordionContent>
                     Для оформления справки 086/у необходим только паспорт. Если есть медицинская карта или результаты недавних анализов, можно их предоставить, но это не обязательно.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-4">
-                  <AccordionTrigger>За какой срок можно получить справку 086/у?</AccordionTrigger>
+                  <AccordionTrigger className="text-primary hover:text-primary/80">
+                    <span className="flex items-center gap-2">
+                      <Icon name="Clock" size={18} />
+                      За какой срок можно получить справку 086/у?
+                    </span>
+                  </AccordionTrigger>
                   <AccordionContent>
                     В нашей клинике справку 086/у можно получить за 1 рабочий день. Если вам нужно срочно — обратитесь к нашим менеджерам, постараемся оформить быстрее.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-5">
-                  <AccordionTrigger>Можно ли получить справку 086/у с доставкой?</AccordionTrigger>
+                  <AccordionTrigger className="text-primary hover:text-primary/80">
+                    <span className="flex items-center gap-2">
+                      <Icon name="Truck" size={18} />
+                      Можно ли получить справку 086/у с доставкой?
+                    </span>
+                  </AccordionTrigger>
                   <AccordionContent>
                     Да, мы предлагаем услугу доставки готовой справки курьером в удобное для вас место по Москве. Стоимость доставки обсуждается с менеджером при оформлении заказа.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-6">
-                  <AccordionTrigger>Официальная ли эта справка?</AccordionTrigger>
+                  <AccordionTrigger className="text-primary hover:text-primary/80">
+                    <span className="flex items-center gap-2">
+                      <Icon name="BadgeCheck" size={18} />
+                      Официальная ли эта справка?
+                    </span>
+                  </AccordionTrigger>
                   <AccordionContent>
                     Да, все справки, которые мы выдаём, полностью официальные и заверены печатями и подписями врачей. Они принимаются во всех учебных заведениях без каких-либо проблем.
                   </AccordionContent>
@@ -304,6 +334,13 @@ const Certificate086 = () => {
               <CardTitle className="text-2xl">Справка 086/у в Москве - быстро и надежно</CardTitle>
             </CardHeader>
             <CardContent className="prose prose-gray max-w-none">
+              <div className="mb-6 rounded-lg overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/d8e4458d-b64d-423e-ba2f-f4ee46d4c9dc.jpg" 
+                  alt="Образец справки 086/у с печатями и подписями врачей" 
+                  className="w-full h-auto"
+                />
+              </div>
               <p className="text-muted-foreground mb-4">
                 Справка 086/у является обязательным медицинским документом для поступления в высшие и средние учебные заведения. 
                 Наша клиника ИзиМед предлагает услуги по оформлению справки 086/у в Москве с минимальными временными затратами.
