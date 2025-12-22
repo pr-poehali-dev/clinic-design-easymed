@@ -141,20 +141,17 @@ const Index = () => {
           <img 
             src="https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/92a2e18b-b6a6-4bc0-ac6e-54775404b458.jpg" 
             alt="Команда врачей ИзиМед" 
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/95 to-background/80" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/85 to-background/70" />
         </div>
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
-            <Badge className="mb-4" variant="secondary">
-              Медицинские услуги в Москве
-            </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
               Медицинские справки и медкнижки за 1 день
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Официальное оформление всех видов медицинских документов без очередей и лишних справок
+              Оформление всех видов медицинских справок в Москве без очередей и с доставкой
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="text-lg">
@@ -163,7 +160,7 @@ const Index = () => {
               </Button>
               <Button size="lg" variant="outline" className="text-lg">
                 <Icon name="Phone" size={20} className="mr-2" />
-                +7 (495) 123-45-67
+                +7 (499) 999-99-99
               </Button>
             </div>
           </div>
