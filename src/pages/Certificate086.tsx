@@ -1,8 +1,4 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
 import Icon from "@/components/ui/icon";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -12,6 +8,10 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { CertificateHeader } from "@/components/certificate/CertificateHeader";
+import { CertificateInfo } from "@/components/certificate/CertificateInfo";
+import { OrderForm } from "@/components/certificate/OrderForm";
+import { CertificateSample } from "@/components/certificate/CertificateSample";
 
 const Certificate086 = () => {
   const [formData, setFormData] = useState({
@@ -49,42 +49,7 @@ const Certificate086 = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-20 items-center justify-between">
-          <Link to="/" className="flex items-center gap-2">
-            <img 
-              src="https://cdn.poehali.dev/files/Screenshot at Dec 22 23-50-53.png" 
-              alt="ИзиМед - Справки и медкнижки" 
-              className="h-16 w-auto"
-            />
-            <div className="flex flex-col gap-0.5">
-              <div className="text-3xl font-serif font-bold leading-none">
-                <span style={{ color: '#7CB5B1' }}>Изи</span>
-                <span style={{ color: '#427D98' }}>Мед</span>
-              </div>
-              <p className="text-xs text-muted-foreground">Справки и медкнижки</p>
-            </div>
-          </Link>
-          <div className="flex items-center gap-6">
-            <div className="hidden md:flex flex-col items-end gap-1">
-              <a href="tel:+74999999999" className="text-lg font-semibold text-primary hover:text-primary/80 transition-colors flex items-center gap-2">
-                <Icon name="Phone" size={18} />
-                +7 (499) 999-99-99
-              </a>
-              <div className="text-xs text-muted-foreground flex items-center gap-1">
-                <Icon name="MapPin" size={14} />
-                Москва, Енисейская ул., 2
-              </div>
-            </div>
-            <Link to="/">
-              <Button variant="ghost" size="sm">
-                <Icon name="ArrowLeft" size={16} className="mr-2" />
-                Назад
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </header>
+      <CertificateHeader />
 
       <main className="container py-12">
         <div className="max-w-6xl mx-auto">
@@ -101,129 +66,19 @@ const Certificate086 = () => {
             Для поступления в ВУЗ, колледж, техникум
           </p>
 
-          <Card className="mb-8">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Icon name="Info" className="text-primary" size={24} />
-                Информация о справке 086/у
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="flex items-start gap-3">
-                  <Icon name="Wallet" className="text-primary mt-1" size={40} />
-                  <div>
-                    <p className="font-semibold">Цена</p>
-                    <p className="text-muted-foreground">1750 ₽</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="Clock" className="text-primary mt-1" size={40} />
-                  <div>
-                    <p className="font-semibold">Срок оформления</p>
-                    <p className="text-muted-foreground">1 день</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Icon name="FileCheck" className="text-primary mt-1" size={40} />
-                  <div>
-                    <p className="font-semibold">Срок действия</p>
-                    <p className="text-muted-foreground">6 месяцев с даты выдачи</p>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+          <CertificateInfo />
 
         <div className="flex flex-col lg:flex-row gap-8 items-start">
           <div className="w-full lg:w-1/2">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-2xl">Оформить заказ</CardTitle>
-                <CardDescription>Заполните форму, и мы свяжемся с вами в ближайшее время</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="fullName">ФИО *</Label>
-                    <Input
-                      id="fullName"
-                      name="fullName"
-                      placeholder="Иванов Иван Иванович"
-                      value={formData.fullName}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="birthDate">Дата рождения *</Label>
-                    <Input
-                      id="birthDate"
-                      name="birthDate"
-                      type="date"
-                      value={formData.birthDate}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="phone">Номер телефона *</Label>
-                    <Input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      placeholder="+7 (999) 123-45-67"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="comment">Комментарий к заказу</Label>
-                    <Textarea
-                      id="comment"
-                      name="comment"
-                      placeholder="Укажите дополнительные пожелания или вопросы"
-                      value={formData.comment}
-                      onChange={handleChange}
-                      rows={3}
-                    />
-                  </div>
-
-                  <Button 
-                    type="submit" 
-                    className="w-full bg-destructive hover:bg-destructive/90 text-destructive-foreground"
-                    size="lg"
-                  >
-                    <Icon name="ShoppingCart" size={20} className="mr-2" />
-                    Оформить заказ
-                  </Button>
-
-                  <p className="text-xs text-muted-foreground text-center">
-                    Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
-                  </p>
-                </form>
-              </CardContent>
-            </Card>
+            <OrderForm 
+              formData={formData}
+              onSubmit={handleSubmit}
+              onChange={handleChange}
+            />
           </div>
 
           <div className="w-full lg:w-1/2">
-            <Card>
-              <CardHeader>
-                <CardTitle>Образец справки 086/у</CardTitle>
-                <CardDescription>Официальный бланк медицинской справки</CardDescription>
-              </CardHeader>
-              <CardContent className="flex items-center justify-center p-4">
-                <img 
-                  src="https://cdn.poehali.dev/files/spravka086u.jpg" 
-                  alt="Образец справки 086/у" 
-                  className="w-full h-auto rounded-lg border shadow-sm"
-                />
-              </CardContent>
-            </Card>
+            <CertificateSample />
           </div>
         </div>
 
@@ -369,10 +224,10 @@ const Certificate086 = () => {
                   <CardContent className="pt-6">
                     <div className="flex items-center gap-2 mb-3">
                       <Icon name="User" className="text-primary" size={20} />
-                      <p className="font-semibold">Дмитрий, практикант</p>
+                      <p className="font-semibold">Дмитрий, студент техникума</p>
                     </div>
                     <p className="text-sm text-muted-foreground mb-3">
-                      Перед практикой понадобилась медсправка. Обратился в ИзиМед, всё сделали максимально оперативно. Заполнил форму на сайте, приехал за справкой на следующий день. Документ официальный, все подписи и печати на месте. Очень доволен сервисом!
+                      Получил справку 086/у через ИзиМед перед практикой. Сделали всё чётко, быстро и без лишних вопросов. Заполнил форму вечером, к обеду следующего дня уже всё было готово. Цена честная, качество на высоте. Всем советую этот способ!
                     </p>
                     <div className="flex gap-1">
                       {[...Array(5)].map((_, i) => (
@@ -387,119 +242,63 @@ const Certificate086 = () => {
         </section>
 
         <section className="mt-16">
-          <Card className="bg-muted/50">
+          <Card>
             <CardHeader>
               <CardTitle className="text-2xl flex items-center gap-2">
                 <Icon name="HelpCircle" className="text-primary" size={28} />
-                Часто задаваемые вопросы
+                Часто задаваемые вопросы о справке 086/у
               </CardTitle>
-              <CardDescription>Ответы на популярные вопросы о справке 086/у</CardDescription>
+              <CardDescription>Ответы на популярные вопросы наших клиентов</CardDescription>
             </CardHeader>
             <CardContent>
-              <Accordion type="multiple" defaultValue={["item-1", "item-2", "item-3", "item-4", "item-5"]} className="w-full">
+              <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
-                  <AccordionTrigger className="text-left text-blue-600 font-semibold">
-                    <div className="flex items-center gap-2">
-                      <Icon name="FileText" size={20} />
-                      <span>Для чего нужна справка 086/у?</span>
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-black">
-                    Справка 086/у требуется при поступлении в учебные заведения (ВУЗы, колледжи, техникумы) и подтверждает отсутствие медицинских противопоказаний к обучению.
+                  <AccordionTrigger>Что такое справка 086/у?</AccordionTrigger>
+                  <AccordionContent>
+                    Справка 086/у — это медицинская справка установленной формы, которая требуется при поступлении в высшие и средние специальные учебные заведения. Она подтверждает, что студент здоров и может обучаться в выбранном учебном заведении.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-2">
-                  <AccordionTrigger className="text-left text-blue-600 font-semibold">
-                    <div className="flex items-center gap-2">
-                      <Icon name="Clipboard" size={20} />
-                      <span>Какие документы нужны для оформления?</span>
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-black">
-                    Для оформления справки понадобится паспорт и прививочный сертификат (если есть). В некоторых случаях может потребоваться фото 3x4.
+                  <AccordionTrigger>Сколько действует справка 086/у?</AccordionTrigger>
+                  <AccordionContent>
+                    Справка 086/у действует в течение 6 месяцев с момента выдачи. После истечения этого срока необходимо оформлять новую справку.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-3">
-                  <AccordionTrigger className="text-left text-blue-600 font-semibold">
-                    <div className="flex items-center gap-2">
-                      <Icon name="Calendar" size={20} />
-                      <span>Сколько действует справка 086/у?</span>
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-black">
-                    Справка действительна в течение 6 месяцев с даты выдачи. После истечения срока потребуется оформление новой справки.
+                  <AccordionTrigger>Какие документы нужны для оформления справки 086/у?</AccordionTrigger>
+                  <AccordionContent>
+                    Для оформления справки 086/у необходим только паспорт. Если есть медицинская карта или результаты недавних анализов, можно их предоставить, но это не обязательно.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-4">
-                  <AccordionTrigger className="text-left text-blue-600 font-semibold">
-                    <div className="flex items-center gap-2">
-                      <Icon name="Clock" size={20} />
-                      <span>Можно ли оформить справку за один день?</span>
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-black">
-                    Да, в нашей клинике справка 086/у оформляется за 1 рабочий день. Вы можете оставить заявку онлайн и забрать готовый документ на следующий день.
+                  <AccordionTrigger>За какой срок можно получить справку 086/у?</AccordionTrigger>
+                  <AccordionContent>
+                    В нашей клинике справку 086/у можно получить за 1 рабочий день. Если вам нужно срочно — обратитесь к нашим менеджерам, постараемся оформить быстрее.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-5">
-                  <AccordionTrigger className="text-left text-blue-600 font-semibold">
-                    <div className="flex items-center gap-2">
-                      <Icon name="ShieldCheck" size={20} />
-                      <span>Будет ли справка официальной?</span>
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-black">
-                    Да, справка полностью официальная, заверяется печатями и подписями лицензированных врачей. Принимается всеми учебными заведениями РФ.
+                  <AccordionTrigger>Можно ли получить справку 086/у с доставкой?</AccordionTrigger>
+                  <AccordionContent>
+                    Да, мы предлагаем услугу доставки готовой справки курьером в удобное для вас место по Москве. Стоимость доставки обсуждается с менеджером при оформлении заказа.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-6">
+                  <AccordionTrigger>Официальная ли эта справка?</AccordionTrigger>
+                  <AccordionContent>
+                    Да, все справки, которые мы выдаём, полностью официальные и заверены печатями и подписями врачей. Они принимаются во всех учебных заведениях без каких-либо проблем.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
             </CardContent>
           </Card>
         </section>
-
-        <section className="mt-16">
-          <Card>
-            <CardContent className="pt-6">
-              <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div>
-                  <h2 className="text-2xl font-bold mb-4">Справка 086/у в Москве — быстро и официально</h2>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Медицинская справка формы 086/у является обязательным документом для всех абитуриентов при поступлении в высшие и средние специальные учебные заведения. Документ подтверждает отсутствие противопоказаний к обучению и содержит результаты осмотров специалистов. В нашей клинике вы можете оформить справку за один день с официальными печатями и подписями врачей.
-                  </p>
-                </div>
-                <div>
-                  <img 
-                    src="https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/0031088e-05eb-4645-90a3-44df5591088b.jpg"
-                    alt="Оформление справки 086/у в медицинском центре"
-                    className="w-full rounded-lg shadow-md"
-                  />
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
-
         </div>
       </main>
-
-      <footer className="border-t py-8 bg-muted/30 mt-12">
-        <div className="container">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-2">
-              <div className="relative">
-                <Icon name="Heart" className="text-primary" size={24} />
-                <Icon name="Sparkles" className="text-primary absolute -top-0.5 -right-0.5" size={10} />
-              </div>
-              <span className="logo-text font-semibold">ИзиМед</span>
-            </div>
-            <p className="text-sm text-muted-foreground">© 2024 ИзиМед. Все права защищены.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
