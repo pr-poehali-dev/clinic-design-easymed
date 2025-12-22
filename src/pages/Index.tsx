@@ -90,12 +90,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container flex h-20 items-center justify-between">
           <div className="flex items-center gap-3">
             <img 
               src="https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/ca62bbd8-d26f-4ec7-b295-5739d1cc2e30.jpg" 
               alt="ИзиМед - Справки и медкнижки" 
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
           </div>
           <nav className="hidden md:flex gap-6 items-center">
@@ -116,10 +116,16 @@ const Index = () => {
             <a href="#about" className="text-foreground/80 hover:text-primary transition-colors">О клинике</a>
             <a href="#contacts" className="text-foreground/80 hover:text-primary transition-colors">Контакты</a>
           </nav>
-          <Button className="hidden md:flex">
-            <Icon name="Phone" size={16} className="mr-2" />
-            Позвонить
-          </Button>
+          <div className="hidden md:flex flex-col items-end gap-1">
+            <a href="tel:+74999999999" className="text-lg font-semibold text-primary hover:text-primary/80 transition-colors flex items-center gap-2">
+              <Icon name="Phone" size={18} />
+              +7 (499) 999-99-99
+            </a>
+            <div className="text-xs text-muted-foreground flex items-center gap-1">
+              <Icon name="MapPin" size={14} />
+              Москва, Енисейская ул., 2
+            </div>
+          </div>
         </div>
       </header>
 
