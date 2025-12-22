@@ -91,12 +91,19 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-20 items-center justify-between">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4">
             <img 
               src="https://cdn.poehali.dev/files/Screenshot at Dec 22 23-50-53.png" 
               alt="ИзиМед - Справки и медкнижки" 
               className="h-16 w-auto"
             />
+            <div className="flex flex-col">
+              <div className="text-3xl font-serif font-bold leading-none">
+                <span style={{ color: '#7CB5B1' }}>Изи</span>
+                <span style={{ color: '#427D98' }}>Мед</span>
+              </div>
+              <p className="text-xs text-muted-foreground mt-1">Справки и медкнижки</p>
+            </div>
           </div>
           <nav className="hidden md:flex gap-6 items-center">
             <DropdownMenu>
