@@ -203,35 +203,60 @@ const Certificate086 = () => {
             <CardContent>
               <Accordion type="multiple" defaultValue={["item-1", "item-2", "item-3", "item-4", "item-5"]} className="w-full">
                 <AccordionItem value="item-1">
-                  <AccordionTrigger className="text-left text-blue-600 font-semibold">Для чего нужна справка 086/у?</AccordionTrigger>
+                  <AccordionTrigger className="text-left text-blue-600 font-semibold">
+                    <div className="flex items-center gap-2">
+                      <Icon name="FileText" size={20} />
+                      <span>Для чего нужна справка 086/у?</span>
+                    </div>
+                  </AccordionTrigger>
                   <AccordionContent className="text-black">
                     Справка 086/у требуется при поступлении в учебные заведения (ВУЗы, колледжи, техникумы) и подтверждает отсутствие медицинских противопоказаний к обучению.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-2">
-                  <AccordionTrigger className="text-left text-blue-600 font-semibold">Какие документы нужны для оформления?</AccordionTrigger>
+                  <AccordionTrigger className="text-left text-blue-600 font-semibold">
+                    <div className="flex items-center gap-2">
+                      <Icon name="Clipboard" size={20} />
+                      <span>Какие документы нужны для оформления?</span>
+                    </div>
+                  </AccordionTrigger>
                   <AccordionContent className="text-black">
                     Для оформления справки понадобится паспорт и прививочный сертификат (если есть). В некоторых случаях может потребоваться фото 3x4.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-3">
-                  <AccordionTrigger className="text-left text-blue-600 font-semibold">Сколько действует справка 086/у?</AccordionTrigger>
+                  <AccordionTrigger className="text-left text-blue-600 font-semibold">
+                    <div className="flex items-center gap-2">
+                      <Icon name="Calendar" size={20} />
+                      <span>Сколько действует справка 086/у?</span>
+                    </div>
+                  </AccordionTrigger>
                   <AccordionContent className="text-black">
                     Справка действительна в течение 6 месяцев с даты выдачи. После истечения срока потребуется оформление новой справки.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-4">
-                  <AccordionTrigger className="text-left text-blue-600 font-semibold">Можно ли оформить справку за один день?</AccordionTrigger>
+                  <AccordionTrigger className="text-left text-blue-600 font-semibold">
+                    <div className="flex items-center gap-2">
+                      <Icon name="Clock" size={20} />
+                      <span>Можно ли оформить справку за один день?</span>
+                    </div>
+                  </AccordionTrigger>
                   <AccordionContent className="text-black">
                     Да, в нашей клинике справка 086/у оформляется за 1 рабочий день. Вы можете оставить заявку онлайн и забрать готовый документ на следующий день.
                   </AccordionContent>
                 </AccordionItem>
 
                 <AccordionItem value="item-5">
-                  <AccordionTrigger className="text-left text-blue-600 font-semibold">Будет ли справка официальной?</AccordionTrigger>
+                  <AccordionTrigger className="text-left text-blue-600 font-semibold">
+                    <div className="flex items-center gap-2">
+                      <Icon name="ShieldCheck" size={20} />
+                      <span>Будет ли справка официальной?</span>
+                    </div>
+                  </AccordionTrigger>
                   <AccordionContent className="text-black">
                     Да, справка полностью официальная, заверяется печатями и подписями лицензированных врачей. Принимается всеми учебными заведениями РФ.
                   </AccordionContent>
