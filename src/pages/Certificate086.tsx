@@ -195,6 +195,72 @@ const Certificate086 = () => {
         </div>
 
         <section className="mt-16">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-2xl flex items-center gap-2">
+                <Icon name="MessageSquare" className="text-primary" size={28} />
+                Отзывы о справке 086/у
+              </CardTitle>
+              <CardDescription>Реальные отзывы наших клиентов</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <Card className="bg-muted/30">
+                  <CardContent className="pt-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Icon name="User" className="text-primary" size={20} />
+                      <p className="font-semibold">Алексей, студент колледжа</p>
+                    </div>
+                    <p className="text-sm text-muted-foreground mb-3">
+                      Нужна была справка для поступления в колледж, времени было мало. Оформил заявку онлайн, на следующий день получил готовую справку. Все печати на месте, в приёмной комиссии приняли без вопросов. Очень удобно и быстро!
+                    </p>
+                    <div className="flex gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" size={16} className="text-yellow-500 fill-yellow-500" />
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-muted/30">
+                  <CardContent className="pt-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Icon name="User" className="text-primary" size={20} />
+                      <p className="font-semibold">Мария, студентка 1 курса</p>
+                    </div>
+                    <p className="text-sm text-muted-foreground mb-3">
+                      Поступала в университет, требовалась справка 086/у. В клинике всё оформили за день, персонал вежливый, цена адекватная. Справка полностью официальная, деканат принял сразу. Рекомендую всем абитуриентам, экономит кучу времени!
+                    </p>
+                    <div className="flex gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" size={16} className="text-yellow-500 fill-yellow-500" />
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-muted/30">
+                  <CardContent className="pt-6">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Icon name="User" className="text-primary" size={20} />
+                      <p className="font-semibold">Дмитрий, практикант</p>
+                    </div>
+                    <p className="text-sm text-muted-foreground mb-3">
+                      Перед практикой понадобилась медсправка. Обратился в ИзиМед, всё сделали максимально оперативно. Заполнил форму на сайте, приехал за справкой на следующий день. Документ официальный, все подписи и печати на месте. Очень доволен сервисом!
+                    </p>
+                    <div className="flex gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" size={16} className="text-yellow-500 fill-yellow-500" />
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        <section className="mt-16">
           <Card className="bg-muted/50">
             <CardHeader>
               <CardTitle className="text-2xl flex items-center gap-2">
