@@ -336,8 +336,8 @@ const Certificate086 = () => {
             <CardContent className="prose prose-gray max-w-none">
               <div className="mb-6 rounded-lg overflow-hidden">
                 <img 
-                  src="https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/d8e4458d-b64d-423e-ba2f-f4ee46d4c9dc.jpg" 
-                  alt="Образец справки 086/у с печатями и подписями врачей" 
+                  src="https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/09fc766c-0d26-4111-b9f6-951520c4c2b2.jpg" 
+                  alt="Врачи клиники ИзиМед - консультация специалистов" 
                   className="w-full h-auto"
                 />
               </div>
