@@ -198,6 +198,45 @@ const Certificate086 = () => {
           <Card>
             <CardHeader>
               <CardTitle className="text-2xl flex items-center gap-2">
+                <Icon name="Users" className="text-primary" size={28} />
+                Кому нужна справка 086/у?
+              </CardTitle>
+              <CardDescription>Категории людей, для которых справка обязательна</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="flex flex-col items-center text-center p-4 rounded-lg bg-muted/30">
+                  <Icon name="GraduationCap" className="text-primary mb-3" size={48} />
+                  <h3 className="font-semibold mb-2">Абитуриенты ВУЗов</h3>
+                  <p className="text-sm text-muted-foreground">При поступлении в университеты и институты</p>
+                </div>
+
+                <div className="flex flex-col items-center text-center p-4 rounded-lg bg-muted/30">
+                  <Icon name="BookOpen" className="text-primary mb-3" size={48} />
+                  <h3 className="font-semibold mb-2">Студенты колледжей</h3>
+                  <p className="text-sm text-muted-foreground">Для поступления в средние специальные учебные заведения</p>
+                </div>
+
+                <div className="flex flex-col items-center text-center p-4 rounded-lg bg-muted/30">
+                  <Icon name="School" className="text-primary mb-3" size={48} />
+                  <h3 className="font-semibold mb-2">Учащиеся техникумов</h3>
+                  <p className="text-sm text-muted-foreground">При зачислении в технические училища</p>
+                </div>
+
+                <div className="flex flex-col items-center text-center p-4 rounded-lg bg-muted/30">
+                  <Icon name="Briefcase" className="text-primary mb-3" size={48} />
+                  <h3 className="font-semibold mb-2">Студенты на практику</h3>
+                  <p className="text-sm text-muted-foreground">Перед началом производственной практики</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </section>
+
+        <section className="mt-16">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-2xl flex items-center gap-2">
                 <Icon name="MessageSquare" className="text-primary" size={28} />
                 Отзывы о справке 086/у
               </CardTitle>
