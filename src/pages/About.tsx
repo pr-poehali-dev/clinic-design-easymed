@@ -21,19 +21,19 @@ const doctors = [
     name: "Козлова Марина Сергеевна",
     specialization: "Терапевт, специалист по медкнижкам",
     experience: "12 лет опыта",
-    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/c1bd9252-6ee4-4e1a-a2bd-16cbeccd4cc2.jpg"
+    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/e2e52ed7-7cc6-40ec-99c1-b31fb05a80f6.jpg"
   },
   {
     name: "Соколов Андрей Игоревич",
     specialization: "Врач-терапевт, специалист по справкам для студентов",
     experience: "10 лет опыта",
-    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/8d19b907-f82f-4b80-8b03-3a5eb5ab8ece.jpg"
+    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/2f8f842f-8b0b-488d-974d-e8adad66bc82.jpg"
   },
   {
     name: "Волкова Ольга Николаевна",
     specialization: "Терапевт, эксперт по оформлению справок для работников",
     experience: "18 лет опыта",
-    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/5e0b9537-2416-4652-b971-2ded447d09ae.jpg"
+    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/5d05f5ac-b980-4b16-aea9-83ae3e3d6def.jpg"
   }
 ];
 
