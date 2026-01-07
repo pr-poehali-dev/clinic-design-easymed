@@ -483,6 +483,11 @@ const Certificate095 = () => {
                     Медицинская книжка
                   </a>
                 </li>
+                <li>
+                  <Link to="/licenses" className="hover:text-primary transition-colors">
+                    Лицензии и сертификаты
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>

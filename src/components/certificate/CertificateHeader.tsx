@@ -45,7 +45,24 @@ export const CertificateHeader = () => {
             </DropdownMenuContent>
           </DropdownMenu>
           <Link to="/#services" className="text-foreground/80 hover:text-primary transition-colors">Услуги</Link>
-          <Link to="/about" className="text-foreground/80 hover:text-primary transition-colors">О клинике</Link>
+          <DropdownMenu>
+            <DropdownMenuTrigger className="text-foreground/80 hover:text-primary transition-colors flex items-center gap-1">
+              О клинике
+              <Icon name="ChevronDown" size={16} />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem asChild>
+                <Link to="/about" className="cursor-pointer">
+                  О клинике
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/licenses" className="cursor-pointer">
+                  Лицензии и сертификаты
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
           <Link to="/contacts" className="text-foreground/80 hover:text-primary transition-colors">Контакты</Link>
         </nav>
         <div className="hidden md:flex flex-col items-end gap-1">

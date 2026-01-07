@@ -429,19 +429,24 @@ const Certificate086 = () => {
                   </Link>
                 </li>
                 <li>
+                  <Link to="/certificate-095" className="hover:text-primary transition-colors">
+                    Справка 095/у
+                  </Link>
+                </li>
+                <li>
                   <a href="#" className="hover:text-primary transition-colors">
                     Справка 003-В/у
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-primary transition-colors">
-                    Справка 095/у
+                    Медицинская книжка
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary transition-colors">
-                    Медицинская книжка
-                  </a>
+                  <Link to="/licenses" className="hover:text-primary transition-colors">
+                    Лицензии и сертификаты
+                  </Link>
                 </li>
               </ul>
             </div>
