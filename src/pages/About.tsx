@@ -9,31 +9,31 @@ const doctors = [
     name: "Смирнова Елена Викторовна",
     specialization: "Терапевт, специалист по оформлению медицинских справок",
     experience: "15 лет опыта",
-    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/bd37d2ed-a83e-4c31-b1e2-7e41be0dc61b.jpg"
+    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/a3976503-a615-45ff-8639-91dc275de51c.jpg"
   },
   {
     name: "Петров Дмитрий Александрович",
     specialization: "Врач общей практики, эксперт по профосмотрам",
     experience: "20 лет опыта",
-    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/6edd5cb2-dd33-4113-89c8-359425ffb2a8.jpg"
+    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/d2e2dc07-d467-45b2-8977-b44eefab26ce.jpg"
   },
   {
     name: "Козлова Марина Сергеевна",
     specialization: "Терапевт, специалист по медкнижкам",
     experience: "12 лет опыта",
-    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/e2e52ed7-7cc6-40ec-99c1-b31fb05a80f6.jpg"
+    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/4c49ae5f-4815-4c7c-b921-01d11955244a.jpg"
   },
   {
     name: "Соколов Андрей Игоревич",
     specialization: "Врач-терапевт, специалист по справкам для студентов",
     experience: "10 лет опыта",
-    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/2f8f842f-8b0b-488d-974d-e8adad66bc82.jpg"
+    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/39bdd17f-9864-4bdb-8504-a5a1b2b88384.jpg"
   },
   {
     name: "Волкова Ольга Николаевна",
     specialization: "Терапевт, эксперт по оформлению справок для работников",
     experience: "18 лет опыта",
-    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/5d05f5ac-b980-4b16-aea9-83ae3e3d6def.jpg"
+    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/c30d0a27-0bbb-4c70-a537-62310acecbdc.jpg"
   }
 ];
 
