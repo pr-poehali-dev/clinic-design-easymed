@@ -45,7 +45,7 @@ export const CertificateHeader = () => {
             </DropdownMenuContent>
           </DropdownMenu>
           <Link to="/#services" className="text-foreground/80 hover:text-primary transition-colors">Услуги</Link>
-          <Link to="/#about" className="text-foreground/80 hover:text-primary transition-colors">О клинике</Link>
+          <Link to="/about" className="text-foreground/80 hover:text-primary transition-colors">О клинике</Link>
           <Link to="/contacts" className="text-foreground/80 hover:text-primary transition-colors">Контакты</Link>
         </nav>
         <div className="hidden md:flex flex-col items-end gap-1">

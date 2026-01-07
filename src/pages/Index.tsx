@@ -120,7 +120,7 @@ const Index = () => {
               </DropdownMenuContent>
             </DropdownMenu>
             <a href="#services" className="text-foreground/80 hover:text-primary transition-colors">Услуги</a>
-            <a href="#about" className="text-foreground/80 hover:text-primary transition-colors">О клинике</a>
+            <Link to="/about" className="text-foreground/80 hover:text-primary transition-colors">О клинике</Link>
             <Link to="/contacts" className="text-foreground/80 hover:text-primary transition-colors">Контакты</Link>
           </nav>
           <div className="hidden md:flex flex-col items-end gap-1">
