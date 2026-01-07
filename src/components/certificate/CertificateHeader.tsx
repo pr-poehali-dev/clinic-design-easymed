@@ -37,11 +37,16 @@ export const CertificateHeader = () => {
                   086/у
                 </Link>
               </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/certificate-095" className="cursor-pointer">
+                  095/у
+                </Link>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
           <Link to="/#services" className="text-foreground/80 hover:text-primary transition-colors">Услуги</Link>
           <Link to="/#about" className="text-foreground/80 hover:text-primary transition-colors">О клинике</Link>
-          <Link to="/#contacts" className="text-foreground/80 hover:text-primary transition-colors">Контакты</Link>
+          <Link to="/contacts" className="text-foreground/80 hover:text-primary transition-colors">Контакты</Link>
         </nav>
         <div className="hidden md:flex flex-col items-end gap-1">
           <a href="tel:+74999999999" className="text-lg font-semibold text-primary hover:text-primary/80 transition-colors flex items-center gap-2">
