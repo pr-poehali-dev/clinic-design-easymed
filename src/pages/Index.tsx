@@ -117,10 +117,32 @@ const Index = () => {
                     086/у
                   </Link>
                 </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/certificate-095" className="cursor-pointer">
+                    095/у
+                  </Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <a href="#services" className="text-foreground/80 hover:text-primary transition-colors">Услуги</a>
-            <Link to="/about" className="text-foreground/80 hover:text-primary transition-colors">О клинике</Link>
+            <Link to="/services" className="text-foreground/80 hover:text-primary transition-colors">Услуги</Link>
+            <DropdownMenu>
+              <DropdownMenuTrigger className="text-foreground/80 hover:text-primary transition-colors flex items-center gap-1">
+                О клинике
+                <Icon name="ChevronDown" size={16} />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem asChild>
+                  <Link to="/about" className="cursor-pointer">
+                    О клинике
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/licenses" className="cursor-pointer">
+                    Лицензии и сертификаты
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             <Link to="/contacts" className="text-foreground/80 hover:text-primary transition-colors">Контакты</Link>
           </nav>
           <div className="hidden md:flex flex-col items-end gap-1">
@@ -347,30 +369,87 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="border-t py-8 bg-muted/30">
-        <div className="container">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-2">
-              <div className="relative">
-                <Icon name="Heart" className="text-primary" size={24} />
-                <Icon name="Sparkles" className="text-primary absolute -top-0.5 -right-0.5" size={10} />
+      <footer className="mt-20 border-t bg-muted/30">
+        <div className="container py-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <img 
+                  src="https://cdn.poehali.dev/files/Screenshot at Dec 22 23-50-53.png" 
+                  alt="ИзиМед - Справки и медкнижки" 
+                  className="h-12 w-auto"
+                />
+                <div className="flex flex-col gap-0.5">
+                  <div className="text-2xl font-serif font-bold leading-none">
+                    <span style={{ color: '#7CB5B1' }}>Изи</span>
+                    <span style={{ color: '#427D98' }}>Мед</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground">Справки и медкнижки</p>
+                </div>
               </div>
-              <span className="logo-text font-semibold">ИзиМед</span>
+              <p className="text-sm text-muted-foreground mb-4">
+                Медицинские справки и медкнижки быстро и надежно
+              </p>
             </div>
-            <p className="text-sm text-muted-foreground text-center">
-              © 2024 ИзиМед. Все права защищены. Медицинские услуги в Москве
-            </p>
-            <div className="flex gap-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Icon name="Instagram" size={20} />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Icon name="Facebook" size={20} />
-              </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <Icon name="MessageCircle" size={20} />
-              </a>
+
+            <div>
+              <h3 className="font-semibold mb-4 flex items-center gap-2">
+                <Icon name="Phone" size={18} className="text-primary" />
+                Контакты
+              </h3>
+              <div className="space-y-3 text-sm">
+                <a href="tel:+74999999999" className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors">
+                  <Icon name="Phone" size={16} />
+                  +7 (499) 999-99-99
+                </a>
+                <div className="flex items-center gap-2 text-muted-foreground">
+                  <Icon name="MapPin" size={16} />
+                  Москва, Енисейская ул., 2
+                </div>
+                <div className="flex items-center gap-2 text-muted-foreground">
+                  <Icon name="Clock" size={16} />
+                  Пн-Пт: 9:00 - 20:00, Сб-Вс: 10:00 - 18:00
+                </div>
+              </div>
             </div>
+
+            <div>
+              <h3 className="font-semibold mb-4 flex items-center gap-2">
+                <Icon name="FileText" size={18} className="text-primary" />
+                Услуги
+              </h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>
+                  <Link to="/certificate-086" className="hover:text-primary transition-colors">
+                    Справка 086/у
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/certificate-095" className="hover:text-primary transition-colors">
+                    Справка 095/у
+                  </Link>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-primary transition-colors">
+                    Справка 003-В/у
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-primary transition-colors">
+                    Медицинская книжка
+                  </a>
+                </li>
+                <li>
+                  <Link to="/licenses" className="hover:text-primary transition-colors">
+                    Лицензии и сертификаты
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
+            <p>&copy; 2024 ИзиМед. Все права защищены.</p>
           </div>
         </div>
       </footer>
