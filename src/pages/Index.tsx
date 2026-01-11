@@ -217,6 +217,11 @@ const Index = () => {
                     Доставка и оплата
                   </Link>
                 </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/reviews" className="cursor-pointer">
+                    Отзывы
+                  </Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </nav>
