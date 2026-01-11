@@ -661,32 +661,37 @@ const Index = () => {
             <div>
               <h3 className="font-semibold mb-4 flex items-center gap-2">
                 <Icon name="FileText" size={18} className="text-primary" />
-                Услуги
+                Информация
               </h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
-                  <Link to="/certificate-086" className="hover:text-primary transition-colors">
-                    Справка 086/у
+                  <Link to="/services" className="hover:text-primary transition-colors">
+                    Справки
                   </Link>
                 </li>
                 <li>
-                  <Link to="/certificate-095" className="hover:text-primary transition-colors">
-                    Справка 095/у
+                  <Link to="/about" className="hover:text-primary transition-colors">
+                    О клинике
                   </Link>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary transition-colors">
-                    Справка 003-В/у
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-primary transition-colors">
-                    Медицинская книжка
-                  </a>
                 </li>
                 <li>
                   <Link to="/licenses" className="hover:text-primary transition-colors">
-                    Лицензии и сертификаты
+                    Лицензии
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/reviews" className="hover:text-primary transition-colors">
+                    Отзывы
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/delivery" className="hover:text-primary transition-colors">
+                    Доставка и оплата
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contacts" className="hover:text-primary transition-colors">
+                    Контакты
                   </Link>
                 </li>
               </ul>
