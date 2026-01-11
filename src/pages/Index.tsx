@@ -167,7 +167,7 @@ const Index = () => {
             </DropdownMenu>
             <DropdownMenu>
               <DropdownMenuTrigger className="text-foreground/80 hover:text-primary transition-colors flex items-center gap-1">
-                Справки
+                Популярные справки
                 <Icon name="ChevronDown" size={16} />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
@@ -183,7 +183,6 @@ const Index = () => {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            <Link to="/services" className="text-foreground/80 hover:text-primary transition-colors">Услуги</Link>
             <DropdownMenu>
               <DropdownMenuTrigger className="text-foreground/80 hover:text-primary transition-colors flex items-center gap-1">
                 О клинике
