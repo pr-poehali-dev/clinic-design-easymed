@@ -27,6 +27,65 @@ export const CertificateHeader = () => {
         </Link>
         <nav className="hidden md:flex gap-6 items-center">
           <DropdownMenu>
+            <DropdownMenuTrigger className="text-foreground/80 hover:text-primary transition-colors flex items-center gap-2">
+              <Icon name="Menu" size={18} />
+              <Link to="/services" className="hover:text-primary">Каталог справок</Link>
+              <Icon name="ChevronDown" size={16} />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="w-56">
+              <DropdownMenuItem asChild>
+                <Link to="/services" className="cursor-pointer">
+                  Справки для работы
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/services" className="cursor-pointer">
+                  Справки для спорта
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/services" className="cursor-pointer">
+                  Справки для учебы
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/services" className="cursor-pointer">
+                  Справки для водителей
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/services" className="cursor-pointer">
+                  Справки из диспансеров
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/services" className="cursor-pointer">
+                  Справки о вакцинации
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/services" className="cursor-pointer">
+                  Справки от врача
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/services" className="cursor-pointer">
+                  Справки по форме
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/services" className="cursor-pointer">
+                  Другие справки
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/services" className="cursor-pointer">
+                  Анализы
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+          <DropdownMenu>
             <DropdownMenuTrigger className="text-foreground/80 hover:text-primary transition-colors flex items-center gap-1">
               Справки
               <Icon name="ChevronDown" size={16} />
