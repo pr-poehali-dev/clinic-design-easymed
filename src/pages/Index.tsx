@@ -295,6 +295,171 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="py-16">
+        <div className="container">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-2xl flex items-center gap-2">
+                <Icon name="Award" className="text-primary" size={28} />
+                Наши преимущества
+              </CardTitle>
+              <CardDescription>Почему выбирают нашу клинику</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-muted/30">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Icon name="Clock" className="text-primary" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Быстрое оформление</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Большинство справок готовы за 30 минут - 1 день. Не нужно тратить время на очереди и многократные визиты.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-muted/30">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Icon name="BadgeCheck" className="text-primary" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">100% официально</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Все документы на бланках установленного образца с печатями врачей и клиники. Принимаются везде.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-muted/30">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Icon name="Users" className="text-primary" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Опытные врачи</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Наша команда состоит из квалифицированных специалистов с многолетним стажом работы.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-muted/30">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Icon name="Truck" className="text-primary" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Доставка по Москве</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Готовые справки можем доставить курьером в любую точку Москвы в удобное для вас время.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-muted/30">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Icon name="Wallet" className="text-primary" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Честные цены</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Прозрачное ценообразование без скрытых платежей. Цена известна заранее и не меняется.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-muted/30">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Icon name="Shield" className="text-primary" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2">Конфиденциальность</h3>
+                    <p className="text-sm text-muted-foreground">
+                      Ваши персональные данные надежно защищены. Гарантируем полную конфиденциальность информации.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      <section className="py-16 bg-muted/30">
+        <div className="container">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-2xl flex items-center gap-2">
+                <Icon name="ListChecks" className="text-primary" size={28} />
+                Как заказать справку
+              </CardTitle>
+              <CardDescription>Простой процесс в 3 шага</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="flex flex-col items-center text-center p-6 rounded-lg bg-muted/30">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                    <span className="text-2xl font-bold text-primary">1</span>
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2">Выберите справку</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Определитесь с нужным документом и ознакомьтесь с ценой и сроками
+                  </p>
+                </div>
+
+                <div className="flex flex-col items-center text-center p-6 rounded-lg bg-muted/30">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                    <span className="text-2xl font-bold text-primary">2</span>
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2">Оставьте заявку</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Заполните форму на сайте или позвоните нам по телефону
+                  </p>
+                </div>
+
+                <div className="flex flex-col items-center text-center p-6 rounded-lg bg-muted/30">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                    <span className="text-2xl font-bold text-primary">3</span>
+                  </div>
+                  <h3 className="font-semibold text-lg mb-2">Получите документ</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Заберите справку в клинике или закажите доставку курьером
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      <section className="py-16">
+        <div className="container">
+          <Card className="bg-gradient-to-br from-primary/10 to-primary/5">
+            <CardContent className="pt-8 pb-8 text-center">
+              <h3 className="text-2xl font-bold mb-4">Нужна консультация?</h3>
+              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                Наши специалисты помогут подобрать нужную справку и ответят на все вопросы
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a 
+                  href="tel:+74999999999" 
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
+                >
+                  <Icon name="Phone" size={20} />
+                  +7 (499) 999-99-99
+                </a>
+                <Link 
+                  to="/contacts" 
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-white text-primary border border-primary rounded-lg hover:bg-primary/5 transition-colors font-medium"
+                >
+                  <Icon name="MapPin" size={20} />
+                  Наши контакты
+                </Link>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       <section id="contacts" className="py-20">
         <div className="container">
           <div className="max-w-4xl mx-auto">
