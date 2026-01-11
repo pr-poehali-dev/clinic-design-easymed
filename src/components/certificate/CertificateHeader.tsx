@@ -121,7 +121,24 @@ export const CertificateHeader = () => {
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Link to="/contacts" className="text-foreground/80 hover:text-primary transition-colors">Контакты</Link>
+          <DropdownMenu>
+            <DropdownMenuTrigger className="text-foreground/80 hover:text-primary transition-colors flex items-center gap-1">
+              Контакты
+              <Icon name="ChevronDown" size={16} />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem asChild>
+                <Link to="/contacts" className="cursor-pointer">
+                  Контакты
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/delivery" className="cursor-pointer">
+                  Доставка и оплата
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </nav>
         <div className="hidden md:flex flex-col items-end gap-1">
           <a href="tel:+74999999999" className="text-lg font-semibold text-primary hover:text-primary/80 transition-colors flex items-center gap-2">
