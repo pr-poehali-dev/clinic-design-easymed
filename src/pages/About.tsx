@@ -4,44 +4,6 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { CertificateHeader } from "@/components/certificate/CertificateHeader";
 
-const doctors = [
-  {
-    name: "Смирнова Елена Викторовна",
-    specialization: "Терапевт, специалист по оформлению медицинских справок",
-    experience: "15 лет опыта",
-    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/a3976503-a615-45ff-8639-91dc275de51c.jpg",
-    link: "/doctor/smirnova"
-  },
-  {
-    name: "Петров Дмитрий Александрович",
-    specialization: "Врач общей практики, эксперт по профосмотрам",
-    experience: "20 лет опыта",
-    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/d2e2dc07-d467-45b2-8977-b44eefab26ce.jpg",
-    link: "/doctor/petrov"
-  },
-  {
-    name: "Козлова Марина Сергеевна",
-    specialization: "Терапевт, специалист по медкнижкам",
-    experience: "12 лет опыта",
-    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/4c49ae5f-4815-4c7c-b921-01d11955244a.jpg",
-    link: "/doctor/kozlova"
-  },
-  {
-    name: "Соколов Андрей Игоревич",
-    specialization: "Врач-терапевт, специалист по справкам для студентов",
-    experience: "10 лет опыта",
-    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/39bdd17f-9864-4bdb-8504-a5a1b2b88384.jpg",
-    link: "/doctor/sokolov"
-  },
-  {
-    name: "Волкова Ольга Николаевна",
-    specialization: "Терапевт, эксперт по оформлению справок для работников",
-    experience: "18 лет опыта",
-    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/c30d0a27-0bbb-4c70-a537-62310acecbdc.jpg",
-    link: "/doctor/volkova"
-  }
-];
-
 const About = () => {
   useEffect(() => {
     document.title = "О клинике ИзиМед - медицинский центр в Москве";
@@ -197,49 +159,7 @@ const About = () => {
             </Card>
           </section>
 
-          <section className="mb-16">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-2xl flex items-center gap-2">
-                  <Icon name="Users" className="text-primary" size={28} />
-                  Наши врачи
-                </CardTitle>
-                <CardDescription>Команда квалифицированных специалистов</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {doctors.map((doctor, index) => (
-                    <Link key={index} to={doctor.link} className="block">
-                      <Card className="overflow-hidden hover:shadow-lg transition-shadow cursor-pointer">
-                        <div className="aspect-square overflow-hidden">
-                          <img 
-                            src={doctor.image} 
-                            alt={doctor.name}
-                            className="w-full h-full object-cover hover:scale-105 transition-transform"
-                          />
-                        </div>
-                        <CardHeader>
-                          <CardTitle className="text-lg">{doctor.name}</CardTitle>
-                          <CardDescription className="text-sm">
-                            {doctor.specialization}
-                          </CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                          <div className="flex items-center justify-between">
-                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                              <Icon name="Briefcase" size={16} className="text-primary" />
-                              {doctor.experience}
-                            </div>
-                            <Icon name="ArrowRight" size={18} className="text-primary" />
-                          </div>
-                        </CardContent>
-                      </Card>
-                    </Link>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </section>
+
 
           <section className="mb-16">
             <Card className="bg-gradient-to-br from-primary/5 to-primary/10">

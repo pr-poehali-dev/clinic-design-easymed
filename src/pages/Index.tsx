@@ -195,8 +195,13 @@ const Index = () => {
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
+                  <Link to="/doctors" className="cursor-pointer">
+                    Врачи
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
                   <Link to="/licenses" className="cursor-pointer">
-                    Лицензии и сертификаты
+                    Лицензии
                   </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
