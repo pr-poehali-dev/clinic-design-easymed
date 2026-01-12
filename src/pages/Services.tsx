@@ -230,6 +230,126 @@ const Services = () => {
           </section>
 
           <section className="mb-12">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-2xl">Типы медицинских справок</CardTitle>
+                <CardDescription>Подробная информация о каждом виде документов</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-6">
+                  <div className="border-b pb-6">
+                    <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                      <Icon name="Briefcase" className="text-primary" size={20} />
+                      Справки для работы
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Медицинские справки для трудоустройства включают справку 302н для предварительного и периодического медосмотра, 
+                      медицинские книжки для работников торговли, общепита, образования и других сфер. Оформление происходит 
+                      после прохождения комплексного обследования у специалистов и сдачи необходимых анализов.
+                    </p>
+                  </div>
+
+                  <div className="border-b pb-6">
+                    <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                      <Icon name="Dumbbell" className="text-primary" size={20} />
+                      Справки для спорта
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Справка 003-В/у требуется для посещения бассейна, фитнес-клубов, спортивных секций и тренажерных залов. 
+                      Документ подтверждает отсутствие противопоказаний к физическим нагрузкам. Включает осмотр терапевта 
+                      и необходимые анализы для допуска к занятиям спортом.
+                    </p>
+                  </div>
+
+                  <div className="border-b pb-6">
+                    <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                      <Icon name="GraduationCap" className="text-primary" size={20} />
+                      Справки для учебы
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Справка 086/у обязательна при поступлении в университет, колледж или техникум. Включает полный медицинский 
+                      осмотр, результаты анализов, данные о прививках и заключения профильных специалистов. Справка 095/у 
+                      используется для освобождения от занятий по болезни.
+                    </p>
+                  </div>
+
+                  <div className="border-b pb-6">
+                    <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                      <Icon name="Car" className="text-primary" size={20} />
+                      Справки для водителей
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Медицинская справка для ГИБДД необходима для получения, замены или восстановления водительских прав. 
+                      Включает осмотр терапевта, офтальмолога, психиатра и нарколога. Срок действия справки — 12 месяцев. 
+                      Оформляется в течение одного дня.
+                    </p>
+                  </div>
+
+                  <div className="border-b pb-6">
+                    <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                      <Icon name="Building2" className="text-primary" size={20} />
+                      Справки из диспансеров
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Справки из психоневрологического и наркологического диспансеров требуются для получения лицензии 
+                      на оружие, водительских прав, трудоустройства на ряд должностей. Подтверждают отсутствие учета 
+                      в специализированных медицинских учреждениях.
+                    </p>
+                  </div>
+
+                  <div className="border-b pb-6">
+                    <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                      <Icon name="Syringe" className="text-primary" size={20} />
+                      Справки о вакцинации
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Справка о прививках (форма 063/у) содержит информацию о проведенной вакцинации. Требуется для 
+                      поступления в учебные заведения, устройства на работу, получения визы и других целей. 
+                      Содержит данные о датах прививок и типах используемых вакцин.
+                    </p>
+                  </div>
+
+                  <div className="border-b pb-6">
+                    <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                      <Icon name="Stethoscope" className="text-primary" size={20} />
+                      Справки от врача
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Справка от врача по форме 095/у подтверждает факт обращения к врачу и временной нетрудоспособности. 
+                      Используется для освобождения от работы или учебы. Не требует оплаты больничного листа и может быть 
+                      оформлена для студентов и школьников.
+                    </p>
+                  </div>
+
+                  <div className="border-b pb-6">
+                    <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                      <Icon name="FileText" className="text-primary" size={20} />
+                      Справки по форме
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Помимо стандартных форм, существуют специализированные медицинские справки: для получения 
+                      путевки в санаторий, для визы, для усыновления, для опеки и другие. Каждая справка оформляется 
+                      по утвержденному образцу с соблюдением всех требований законодательства.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
+                      <Icon name="TestTube" className="text-primary" size={20} />
+                      Анализы
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Лабораторные анализы являются неотъемлемой частью медицинского обследования. Включают общий 
+                      анализ крови и мочи, биохимию, анализы на инфекции. Результаты готовы в течение 1-2 дней. 
+                      Все анализы выполняются в сертифицированной лаборатории с соблюдением стандартов качества.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+
+          <section className="mb-12">
             <Card className="bg-gradient-to-br from-primary/5 to-primary/10">
               <CardHeader>
                 <CardTitle className="text-2xl flex items-center gap-2">
