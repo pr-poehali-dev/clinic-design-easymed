@@ -23,7 +23,7 @@ const doctors = [
     name: "Козлова Марина Сергеевна",
     specialization: "Терапевт, специалист по медкнижкам",
     experience: "12 лет опыта",
-    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/4c49ae5f-4815-4c7c-b921-01d11955244a.jpg",
+    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/05a6239e-0791-4bf0-b484-152c379f05db.jpg",
     link: "/doctor/kozlova"
   },
   {
