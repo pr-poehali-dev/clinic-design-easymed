@@ -37,7 +37,7 @@ const doctors = [
     name: "Волкова Ольга Николаевна",
     specialization: "Терапевт, эксперт по оформлению справок для работников",
     experience: "18 лет опыта",
-    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/c9a553ac-e5b7-44e6-b666-65f82fa0c724.jpg",
+    image: "https://cdn.poehali.dev/projects/77d582ab-51e7-4922-90af-fd5f275d2b1f/files/e9735831-ddcd-41ef-a285-3b7e346c3041.jpg",
     link: "/doctor/volkova"
   }
 ];
